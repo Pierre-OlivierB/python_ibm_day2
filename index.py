@@ -126,10 +126,17 @@ print(len(test_str))
 # -----------------------------
 #  *display a list but in each iter the first is shift
 
-for i in range(len(list1)):
-    # print(item)
-    print(list1)
-    list1.pop(0)
+# for i in range(len(list1)):
+#     # print(item)
+#     # print(list1)
+#     list1.pop(0)
 
 # --------------------------------
+# *revers a list with for
+list1_len = len(list1)
+# print(list1_len/2)
+for i in range(int(list1_len/2)):
+    list1[i], list1[len(list1)-1-i] = list1[len(list1)-1-i], list1[i]
+print(list1)
+# -------------------------
 # *

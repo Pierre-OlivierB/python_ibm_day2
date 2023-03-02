@@ -22,4 +22,8 @@
 
 ### display a list but in each iter the first is shift
 
+### revers a list with for
+
+###
+
 ## part 2 (lvl 2)

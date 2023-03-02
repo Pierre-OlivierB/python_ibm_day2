@@ -143,5 +143,23 @@ for i in range(int(list1_len/2)):
 for i in range(int(list1_len/2)):
     list1[i], list1[len(list1)-1-i] = list1[len(list1)-1-i], list1[i]
     if i == int(list1_len/2)-1:
-        print("ok")
-print(list1)
+        teset = 0
+        # print("ok")
+# print(list1)
+# -----------------------------------
+# !PARTIE 2
+# ---------------------------------
+# *palindrom verification
+word = "rotor"
+flag_word = 0
+for letter in range(int(len(word)/2)):
+    if word[letter] != word[len(word)-1-letter]:
+        flag_word = 1
+if flag_word > 0:
+    print("le mot ", word, " n'est pas un palindrome")
+elif flag_word == 0:
+    print("le mot ", word, " est un palindrome")
+
+
+# ---------------------------------
+# *

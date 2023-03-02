@@ -26,4 +26,8 @@
 
 ### display ok when finish
 
-## part 2 (lvl 2)
+## part 2 (lvl 2) [line 150]
+
+### palindrom verification
+
+###

@@ -206,3 +206,6 @@ for person in student:
         calc += note
     moy = calc/len(student[person])
     print("moyenne de :", person, " : ", moy)
+
+# ---------------------------------------------------
+# *

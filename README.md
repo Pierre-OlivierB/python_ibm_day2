@@ -24,6 +24,6 @@
 
 ### revers a list with for
 
-###
+### display ok when finish
 
 ## part 2 (lvl 2)

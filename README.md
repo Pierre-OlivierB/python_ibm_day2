@@ -31,3 +31,5 @@
 ### palindrom verification
 
 ### simulation of 5 drop of dices and addition of result
+
+### count middle point of students , 5 max value by student

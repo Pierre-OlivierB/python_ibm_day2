@@ -175,4 +175,34 @@ for i in range(6):
 
 # print(points)
 # --------------------------------------
-# *
+# *count middle point of students , 5 max value by student; nmb students is not defined
+student = {}
+name = ""
+master_choice = input(
+    "voulez-vous entrer des notes pour un étudiant (réponse attendu : y or n) ? ")
+while master_choice == 'y':
+    name = input("quel est son nom ? ")
+    value_choice = 0
+    values = []
+    while value_choice < 5:
+        value = input("quel est sa note à ajouter ? ")
+        value_choice += 1
+        if value_choice < 5:
+            add_value_choice = input(
+                "voulez-vous ajouter une autre note (y/n) ?")
+        if add_value_choice == 'n':
+            value_choice = 5
+        values.append(int(value))
+        student[name] = values
+    master_choice = input(
+        "voulez-vous entrer des notes pour un étudiant (réponse attendu : y or n) ? ")
+print(student)
+
+for person in student:
+    calc = 0
+    moy = 0
+    print(person, student[person])
+    for note in student[person]:
+        calc += note
+    moy = calc/len(student[person])
+    print("moyenne de :", person, " : ", moy)

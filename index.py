@@ -111,11 +111,17 @@ index = 0
 while list1_len > 0:
     # print(list1[index])
     if list1[index] > 150:
-        print("fin")
+        # print("fin")
         list1_len = 0
     elif list1[index] % 5 == 0:
-        print(list1[index])
+        # print(list1[index])
+        trash = 0
     index += 1
     list1_len -= 1
 # ---------------------------------------------
-# *
+# *count el in number
+test_num = 56894984578
+test_str = str(test_num)
+print(len(test_str))
+# -----------------------------
+#  *

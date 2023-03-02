@@ -16,4 +16,6 @@
 
 ### add array, then catch user input and count el num pair and imp in it
 
+### create a for in array and display each value/5. stop when value > 150
+
 ## part 2 (lvl 2)

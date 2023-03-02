@@ -69,9 +69,9 @@ if game == 'y':
 # --------------------------------------
 # *create array then catch input user to add it in array and return the two biggers values
 table = []
-user_table_choice = input("Combien voulez vous entrez de valeurs ?")
-iteration = int(user_table_choice)
-
+# user_table_choice = input("Combien voulez vous entrez de valeurs ?")
+# iteration = int(user_table_choice)
+iteration = 0
 
 while iteration > 0:
     user_num_choice = input("Entrez une valeur : ")
@@ -101,4 +101,21 @@ for el in table:
         pair += 1
     if el % 2 == 1:
         imp += 1
-print("nombre de pair : ", pair, "; nombre d'impair : ", imp)
+# print("nombre de pair : ", pair, "; nombre d'impair : ", imp)
+# ------------------------------------------------
+# *create a for in array and display each value/5. stop when value > 150
+list1 = [12, 15, 32, 42, 55, 75, 122, 132, 150, 180, 200]
+list1_len = len(list1)
+# print(list1_len)
+index = 0
+while list1_len > 0:
+    # print(list1[index])
+    if list1[index] > 150:
+        print("fin")
+        list1_len = 0
+    elif list1[index] % 5 == 0:
+        print(list1[index])
+    index += 1
+    list1_len -= 1
+# ---------------------------------------------
+# *

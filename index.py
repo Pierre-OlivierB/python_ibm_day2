@@ -124,4 +124,4 @@ test_num = 56894984578
 test_str = str(test_num)
 print(len(test_str))
 # -----------------------------
-#  *
+#  *display a list but in each iter the first is shift

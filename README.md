@@ -18,4 +18,8 @@
 
 ### create a for in array and display each value/5. stop when value > 150
 
+### count el in number
+
+### display a list but in each iter the first is shift
+
 ## part 2 (lvl 2)

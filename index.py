@@ -125,3 +125,11 @@ test_str = str(test_num)
 print(len(test_str))
 # -----------------------------
 #  *display a list but in each iter the first is shift
+
+for i in range(len(list1)):
+    # print(item)
+    print(list1)
+    list1.pop(0)
+
+# --------------------------------
+# *

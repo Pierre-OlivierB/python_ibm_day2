@@ -27,10 +27,17 @@ for n in range(numbers):
 # -----------------------
 # *found logic to add all naturals numbers to var in using for and while
 natural = 0
-input = 30
-for i in range(input+1):
+input_num = 30
+for i in range(input_num+1):
     natural += i
 
-print(natural)
+# print(natural)
 # ------------------------
+# *use prompt and display multiplication table with for or while
+print("Donnez un nombre : ")
+user_choice = input()
+print("User number choice : " + user_choice)
+for number in range(10+1):
+    print(number, "x", user_choice, "=", number*int(user_choice))
+# -------------------------
 # *

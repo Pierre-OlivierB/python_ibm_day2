@@ -90,5 +90,15 @@ for i in range(len(table)-1):
             table[(len(table)-1-j)], table[(len(table)-2-j)
                                            ] = table[(len(table)-2-j)], table[(len(table)-1-j)]
 
-print("le plus grand ", table[0])
-print("le deuxième plus grand ", table[1])
+# print("le plus grand ", table[0])
+# print("le deuxième plus grand ", table[1])
+# ----------------------------------------------
+# *add array, then catch user input and count el num pair and imp in it
+pair = 0
+imp = 0
+for el in table:
+    if el % 2 == 0:
+        pair += 1
+    if el % 2 == 1:
+        imp += 1
+print("nombre de pair : ", pair, "; nombre d'impair : ", imp)

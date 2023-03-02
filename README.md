@@ -14,4 +14,6 @@
 
 ### create array then catch input user to add it in array and return the two biggers values
 
+### add array, then catch user input and count el num pair and imp in it
+
 ## part 2 (lvl 2)

@@ -155,11 +155,24 @@ flag_word = 0
 for letter in range(int(len(word)/2)):
     if word[letter] != word[len(word)-1-letter]:
         flag_word = 1
-if flag_word > 0:
-    print("le mot ", word, " n'est pas un palindrome")
-elif flag_word == 0:
-    print("le mot ", word, " est un palindrome")
+# if flag_word > 0:
+#     print("le mot ", word, " n'est pas un palindrome")
+# elif flag_word == 0:
+#     print("le mot ", word, " est un palindrome")
 
 
 # ---------------------------------
+# *simulation of 5 drop of dices and addition of result
+points = 0
+# print(dice)
+for i in range(6):
+    dice = randint(0, 5)
+    # print(dice+1)
+    result = dice+1
+    points += result
+    # print("pts : ", points)
+    # print("dice : ", result)
+
+# print(points)
+# --------------------------------------
 # *

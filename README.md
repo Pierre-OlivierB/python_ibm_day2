@@ -30,4 +30,4 @@
 
 ### palindrom verification
 
-###
+### simulation of 5 drop of dices and addition of result

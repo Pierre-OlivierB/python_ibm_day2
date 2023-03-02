@@ -122,7 +122,7 @@ while list1_len > 0:
 # *count el in number
 test_num = 56894984578
 test_str = str(test_num)
-print(len(test_str))
+# print(len(test_str))
 # -----------------------------
 #  *display a list but in each iter the first is shift
 
@@ -137,6 +137,11 @@ list1_len = len(list1)
 # print(list1_len/2)
 for i in range(int(list1_len/2)):
     list1[i], list1[len(list1)-1-i] = list1[len(list1)-1-i], list1[i]
-print(list1)
+# print(list1)
 # -------------------------
-# *
+# *display "ok" when for is finished
+for i in range(int(list1_len/2)):
+    list1[i], list1[len(list1)-1-i] = list1[len(list1)-1-i], list1[i]
+    if i == int(list1_len/2)-1:
+        print("ok")
+print(list1)

@@ -1,6 +1,6 @@
-# Lvl 1
+# ! Lvl 1
 # ------------------
-# found max in using if /else for 3 numbers
+# *found max in using if /else for 3 numbers
 
 a = 40
 b = 20
@@ -18,4 +18,10 @@ else:
 print(max)
 
 # -----------------------
-#
+# *build display tool to display all pair numbers from 1 to n
+numbers = 20
+for n in range(numbers):
+    if n % 2 == 0 and n != 0:
+        print(n)
+# -----------------------
+# *

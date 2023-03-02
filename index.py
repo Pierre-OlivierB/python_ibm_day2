@@ -43,11 +43,12 @@ for i in range(input_num+1):
 # for number in range(10+1):
 #     print(number, "x", user_choice, "=", number*int(user_choice))
 # -------------------------
-# *python choose un number, you have 10 chances to find it with input
+# *python choose a number, you have 10 chances to find it with input
 python_number = int(random()*100)+1
 # print(python_number)
 user_try = 0
-game = input('voulez vous jouer, rep attendu : y or n ? ')
+# game = input('voulez vous jouer, rep attendu : y or n ? ')
+game = n
 if game == 'y':
     print("Python a choisit un nombre, essayez de le trouver!")
     user_try = 10
@@ -65,3 +66,29 @@ if game == 'y':
             print("c'est plus")
 
     # print(user_try)
+# --------------------------------------
+# *create array then catch input user to add it in array and return the two biggers values
+table = []
+user_table_choice = input("Combien voulez vous entrez de valeurs ?")
+iteration = int(user_table_choice)
+
+
+while iteration > 0:
+    user_num_choice = input("Entrez une valeur : ")
+    table.append(int(user_num_choice))
+    print(table)
+    iteration -= 1
+    # print(iteration)
+
+table_max = []
+
+for i in range(len(table)-1):
+    if table[i] < table[i+1]:
+        table[i], table[i+1] = table[i+1], table[i]
+    for j in range(len(table)-1):
+        if table[(len(table)-1-j)] > table[(len(table)-2-j)]:
+            table[(len(table)-1-j)], table[(len(table)-2-j)
+                                           ] = table[(len(table)-2-j)], table[(len(table)-1-j)]
+
+print("le plus grand ", table[0])
+print("le deuxième plus grand ", table[1])

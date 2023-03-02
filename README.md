@@ -10,4 +10,8 @@
 
 ### use prompt and display multiplication table with for or while
 
+### python choose a number, you have 10 chances to find it with input
+
+### create array then catch input user to add it in array and return the two biggers values
+
 ## part 2 (lvl 2)

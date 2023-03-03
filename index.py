@@ -264,7 +264,45 @@ def verif_equals_diag(first, second):
                   index, ";", first[index], "=", second[index])
             flag = True
     if flag == False:
-        print("aucun élément sont égaux")
+        print("aucun élément est égal")
 
 
 verif_equals_diag(first_diag, second_diag)
+
+# *moy of columns, svg in one array,display index of the better moy of the array equals to matrice column
+matrice_two = [[9, 2, 3, 4], [4, 5, 6, 9], [7, 8, 9, 6],
+               [7, 8, 9, 6], [9, 2, 3, 4], [9, 9, 6, 9], [4, 5, 6, 9]]
+# svg_num_moy = [0, 0, 0, 0]
+svg_moy = [0, 0, 0, 0]
+
+
+def first_column(matrice_test, svg):
+    range_matrice = len(matrice_test)
+    for tabl in matrice_test:
+        # print(tabl)
+        for e in range(len(tabl)):
+            # print(tabl[e])
+            svg[e] += tabl[e]
+    for index in range(len(svg)):
+        svg[index] /= range_matrice
+
+
+first_column(matrice_two, svg_moy)
+print(svg_moy)
+
+
+def display_max_moy(table):
+    max_value = table[0]
+    index_max = 0
+    for index in range(len(table)):
+        if table[index] > max_value:
+            max_value = table[index]
+            index_max = index
+
+    return index_max
+
+
+# print(svg_num_moy)
+# def moy_column(calc_matrice):
+column_index = display_max_moy(svg_moy)
+print("la colonne qui a la plus grand valeur est la ", column_index+1)

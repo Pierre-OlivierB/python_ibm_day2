@@ -37,3 +37,7 @@
 ### calc imp el of matrice
 
 ### display 1st/1st tab, 2sd/2sd tab... then last/1st tab, last-1/2sd tab...
+
+### test if number display is equals between first_diag and second_diag
+
+### moy of columns, svg in one array,display index of the better moy of the array equals to matrice column

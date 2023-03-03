@@ -334,3 +334,19 @@ while add_stud == 'y':
     add_stud = input("Voulez-vous ajouter un étudiant (rép attendu: y/n) ?")
 
 print(student)
+
+# * add search student with input letter
+
+
+def display_names_choose(table, letter):
+    for names in table:
+        # for let in names["last-name"]:
+        #     # print(let)
+        #     print(names["last-name"][0])
+        if names["last-name"][0] == letter:
+            # print(names["last-name"])
+            print(names)
+
+
+choose_a_letter = input("Recherche du nom d'étudiant par lettre : ")
+display_names_choose(student, choose_a_letter)

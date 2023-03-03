@@ -210,7 +210,7 @@ for person in student:
 
 # ---------------------------------------------------
 # *calc imp el of matrice
-matrice = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+matrice = [[1, 2, 3], [4, 5, 6, 10], [7, 8, 9]]
 
 
 def add_imp(numtable):
@@ -229,20 +229,42 @@ def add_imp(numtable):
 # print(matr)
 
 # * display 1st/1st tab, 2sd/2sd tab... then last/1st tab, last-1/2sd tab...
+first_diag = []
+second_diag = []
 
 
 def display_diag(numtable):
     index = 0
     for table in numtable:
-        print(table)
-        print(table[index])
+        # print(table)
+        # print(table[index])
+        first_diag.append(table[index])
         if index < len(table)-1:
             index += 1
             # print(index)
+    index = 0
     for table in numtable:
-        print(table)
-        print(table[index])
-        index -= 1
+        # print(table)
+        # print(table[index])
+        second_diag.append(table[len(table)-1-index])
+        index += 1
 
 
 display_diag(matrice)
+print(first_diag, second_diag)
+
+# *test if number display is equals between first_diag and second_diag
+
+
+def verif_equals_diag(first, second):
+    flag = False
+    for index in range(len(first)):
+        if first[index] == second[index]:
+            print("oui ils sont égaux à l'index: ",
+                  index, ";", first[index], "=", second[index])
+            flag = True
+    if flag == False:
+        print("aucun élément sont égaux")
+
+
+verif_equals_diag(first_diag, second_diag)

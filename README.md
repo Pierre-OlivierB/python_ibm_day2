@@ -34,4 +34,4 @@
 
 ### count middle point of students , 5 max value by student
 
-###
+### calc imp el of matrice

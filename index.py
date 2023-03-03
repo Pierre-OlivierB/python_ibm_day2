@@ -178,8 +178,9 @@ for i in range(6):
 # *count middle point of students , 5 max value by student; nmb students is not defined
 student = {}
 name = ""
-master_choice = input(
-    "voulez-vous entrer des notes pour un étudiant (réponse attendu : y or n) ? ")
+# master_choice = input(
+#     "voulez-vous entrer des notes pour un étudiant (réponse attendu : y or n) ? ")
+master_choice = 'n'
 while master_choice == 'y':
     name = input("quel est son nom ? ")
     value_choice = 0
@@ -208,4 +209,21 @@ for person in student:
     print("moyenne de :", person, " : ", moy)
 
 # ---------------------------------------------------
-# *
+# *calc imp el of matrice
+matrice = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+
+def add_imp(numtable):
+    calc_matrice = 0
+    for tabl in numtable:
+        # print(tabl)
+        for num in tabl:
+            # print(num)
+            if num % 2 == 1:
+                calc_matrice += num
+                print(num, calc_matrice)
+    return calc_matrice
+
+
+matr = add_imp(matrice)
+print(matr)

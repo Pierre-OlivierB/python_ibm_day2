@@ -251,7 +251,7 @@ def display_diag(numtable):
 
 
 display_diag(matrice)
-print(first_diag, second_diag)
+# print(first_diag, second_diag)
 
 # *test if number display is equals between first_diag and second_diag
 
@@ -267,7 +267,7 @@ def verif_equals_diag(first, second):
         print("aucun élément est égal")
 
 
-verif_equals_diag(first_diag, second_diag)
+# verif_equals_diag(first_diag, second_diag)
 
 # *moy of columns, svg in one array,display index of the better moy of the array equals to matrice column
 matrice_two = [[9, 2, 3, 4], [4, 5, 6, 9], [7, 8, 9, 6],
@@ -288,7 +288,7 @@ def first_column(matrice_test, svg):
 
 
 first_column(matrice_two, svg_moy)
-print(svg_moy)
+# print(svg_moy)
 
 
 def display_max_moy(table):
@@ -305,4 +305,32 @@ def display_max_moy(table):
 # print(svg_num_moy)
 # def moy_column(calc_matrice):
 column_index = display_max_moy(svg_moy)
-print("la colonne qui a la plus grand valeur est la ", column_index+1)
+# print("la colonne qui a la plus grand valeur est la ", column_index+1)
+
+# ----------------------------
+# *fake BDD students : in student array add dict{num:,last-name:,first-name:} in it for each students
+student = []
+add_stud = input("Voulez-vous ajouter un étudiant (rép attendu: y/n) ?")
+num = 0
+
+
+def add_student(obj):
+    last_name = input("Quel est son nom ?")
+    first_name = input("Quel est son prénom ?")
+
+    obj["num"] = num
+    obj["last-name"] = last_name
+    obj["first-name"] = first_name
+
+    return obj
+
+
+while add_stud == 'y':
+    dict_student = {"num": "0", "last-name": "default",
+                    "first-name": "default"}
+    student.append(add_student(dict_student))
+    num += 1
+
+    add_stud = input("Voulez-vous ajouter un étudiant (rép attendu: y/n) ?")
+
+print(student)

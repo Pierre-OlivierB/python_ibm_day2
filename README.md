@@ -41,3 +41,5 @@
 ### test if number display is equals between first_diag and second_diag
 
 ### moy of columns, svg in one array,display index of the better moy of the array equals to matrice column
+
+### fake BDD students : in student array add dict{num:,last-name:,first-name:} in it for each students

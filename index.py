@@ -197,7 +197,7 @@ while master_choice == 'y':
         student[name] = values
     master_choice = input(
         "voulez-vous entrer des notes pour un étudiant (réponse attendu : y or n) ? ")
-print(student)
+# print(student)
 
 for person in student:
     calc = 0
@@ -225,5 +225,24 @@ def add_imp(numtable):
     return calc_matrice
 
 
-matr = add_imp(matrice)
-print(matr)
+# matr = add_imp(matrice)
+# print(matr)
+
+# * display 1st/1st tab, 2sd/2sd tab... then last/1st tab, last-1/2sd tab...
+
+
+def display_diag(numtable):
+    index = 0
+    for table in numtable:
+        print(table)
+        print(table[index])
+        if index < len(table)-1:
+            index += 1
+            # print(index)
+    for table in numtable:
+        print(table)
+        print(table[index])
+        index -= 1
+
+
+display_diag(matrice)

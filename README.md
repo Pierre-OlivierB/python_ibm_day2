@@ -35,3 +35,5 @@
 ### count middle point of students , 5 max value by student
 
 ### calc imp el of matrice
+
+### display 1st/1st tab, 2sd/2sd tab... then last/1st tab, last-1/2sd tab...
